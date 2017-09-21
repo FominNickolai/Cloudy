@@ -540,12 +540,22 @@
                                     <outlet property="delegate" destination="1SC-03-Wyq" id="p5h-ju-EYh"/>
                                 </connections>
                             </tableView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="AmS-qx-Wyd">
+                                <rect key="frame" x="169" y="315" width="37" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="37" id="TCD-iv-Def"/>
+                                    <constraint firstAttribute="height" constant="37" id="U7v-NI-1CH"/>
+                                </constraints>
+                                <color key="color" cocoaTouchSystemColor="darkTextColor"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="kC8-yI-yKo" firstAttribute="top" secondItem="3Mb-Ss-OAB" secondAttribute="top" id="Fog-z0-vv1"/>
                             <constraint firstItem="kC8-yI-yKo" firstAttribute="leading" secondItem="3Mb-Ss-OAB" secondAttribute="leading" id="KtM-He-7Xm"/>
                             <constraint firstItem="UXA-Nw-IDn" firstAttribute="top" secondItem="kC8-yI-yKo" secondAttribute="bottom" id="TX2-mX-WjC"/>
+                            <constraint firstItem="AmS-qx-Wyd" firstAttribute="centerY" secondItem="3Mb-Ss-OAB" secondAttribute="centerY" id="dMr-SW-1Ac"/>
+                            <constraint firstItem="AmS-qx-Wyd" firstAttribute="centerX" secondItem="3Mb-Ss-OAB" secondAttribute="centerX" id="sNX-CH-AcP"/>
                             <constraint firstAttribute="trailing" secondItem="kC8-yI-yKo" secondAttribute="trailing" id="t4j-NW-1vE"/>
                         </constraints>
                     </view>
@@ -557,6 +567,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="activityIndicatorView" destination="AmS-qx-Wyd" id="wdL-mB-fmu"/>
                         <outlet property="searchBar" destination="K22-9s-gOl" id="lND-vd-kdm"/>
                         <outlet property="tableView" destination="kC8-yI-yKo" id="JTj-z6-wjs"/>
                     </connections>
